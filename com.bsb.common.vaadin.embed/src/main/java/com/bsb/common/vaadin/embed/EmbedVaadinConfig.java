@@ -443,13 +443,27 @@ public class EmbedVaadinConfig implements Serializable {
         }
     }
 
+//    @Override
+//    public String toString() {
+////        return Objects.(this).add("port", port)
+////                .add("context", contextPath).add("webapp dir", contextRootDirectory)
+////                .add("waiting", waiting).add("widgetSet", widgetSet)
+////                .add("productionMode", productionMode)
+////                .add("openBrowser", openBrowser).toString();
+//    }
+
+
     @Override
     public String toString() {
-        return Objects.toStringHelper(this).add("port", port)
-                .add("context", contextPath).add("webapp dir", contextRootDirectory)
-                .add("waiting", waiting).add("widgetSet", widgetSet)
-                .add("productionMode", productionMode)
-                .add("openBrowser", openBrowser).toString();
+        return "EmbedVaadinConfig{" +
+                "port=" + port +
+                ", contextPath='" + contextPath + '\'' +
+                ", contextRootDirectory=" + contextRootDirectory +
+                ", waiting=" + waiting +
+                ", widgetSet='" + widgetSet + '\'' +
+                ", productionMode=" + productionMode +
+                ", openBrowser=" + openBrowser +
+                ", customBrowserUrl='" + customBrowserUrl + '\'' +
+                '}';
     }
-
 }
